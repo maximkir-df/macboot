@@ -6,9 +6,9 @@ homebrew_installed_packages:
   - localstack
 
 homebrew_cask_apps_user:
-  - bitwarden
   - google-chrome
   - slack
   - notion
+  - whatsapp
   - zoom
 
