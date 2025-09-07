@@ -1,0 +1,14 @@
+homebrew_taps_user:
+  - hashicorp/tap
+
+homebrew_installed_packages:
+  - terraform
+  - localstack
+
+homebrew_cask_apps_user:
+  - bitwarden
+  - google-chrome
+  - slack
+  - notion
+  - zoom
+
