@@ -6,6 +6,8 @@ homebrew_installed_packages:
   - kubectl
   - terraform
   - localstack
+  - poetry
+  - tmux
 
 homebrew_cask_apps_user:
   - intellij-idea-ce
