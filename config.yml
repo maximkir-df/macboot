@@ -2,6 +2,8 @@ homebrew_taps_user:
   - hashicorp/tap
 
 homebrew_installed_packages:
+  - awscli
+  - kubectl
   - terraform
   - localstack
 
@@ -12,3 +14,7 @@ homebrew_cask_apps_user:
   - notion
   - whatsapp
   - zoom
+
+oh_my_zsh_plugins_user:
+  - aws
+  - kubectl
