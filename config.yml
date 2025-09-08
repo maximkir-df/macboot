@@ -4,7 +4,7 @@ homebrew_taps_user:
 homebrew_installed_packages:
   - awscli
   - kubectl
-  - terraform
+  - hashicorp/tap/terraform
   - localstack
   - poetry
   - tmux
