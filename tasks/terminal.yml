@@ -1,5 +1,4 @@
 ---
-
 - name: Check if Oh My Zsh already installed
   ansible.builtin.stat:
     path: "{{ oh_my_zsh_home }}"
@@ -45,19 +44,19 @@
 - name: Comment out oh-my-zsh theme
   ansible.builtin.replace:
     path: "{{ user_home }}/.zshrc"
-    regexp: '^(ZSH_THEME=.*)'
+    regexp: "^(ZSH_THEME=.*)"
     replace: '#\1'
 
 - name: Update oh-my-zsh plugins
   ansible.builtin.lineinfile:
     path: "{{ user_home }}/.zshrc"
-    regexp: '^plugins='
-    line: "plugins=({{ oh_my_zsh_plugins | join(' ') }})"
+    regexp: "^plugins="
+    line: "plugins=({{ (oh_my_zsh_plugins + oh_my_zsh_plugins_user | default([])) | join(' ') }})"
 
 - name: Update command execution date format in history
   ansible.builtin.lineinfile:
     path: "{{ user_home }}/.zshrc"
-    regexp: '^# HIST_STAMPS='
+    regexp: "^# HIST_STAMPS="
     line: 'HIST_STAMPS="dd.mm.yyyy"'
 
 - name: Insert .zshrc.local file load
