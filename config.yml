@@ -6,8 +6,7 @@ homebrew_installed_packages:
   - kubectl
   - hashicorp/tap/terraform
   - localstack
-  - poetry
-  - tmux
+  - ripgrep
 
 homebrew_cask_apps_user:
   - intellij-idea-ce
@@ -16,6 +15,7 @@ homebrew_cask_apps_user:
   - notion
   - whatsapp
   - zoom
+  - font-fira-code-nerd-font
 
 oh_my_zsh_plugins_user:
   - aws
