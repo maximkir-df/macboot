@@ -8,6 +8,7 @@ iterm_dynamic_profiles_dir: "{{user_home}}/Library/Application Support/iTerm2/Dy
 
 homebrew_installed_packages:
   - coreutils
+  - gcc
   - duf
   - findutils
   - git
@@ -44,6 +45,7 @@ homebrew_installed_packages:
   - fd
   - uv
   - starship
+  - tree-sitter-cli
 
 # Mac Apps to be installed with homebrew-cask
 homebrew_cask_apps:
